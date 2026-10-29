@@ -1,2 +1,0 @@
-Посилання на клікабельний прототип: [https://www.figma.com/proto/HBZmaat1xvGIfdwLuLHdNA/PaperTrail?page-id=0%3A1\&node-id=7-4709\&p=f\&viewport=175%2C177%2C0.03\&t=lv1oGFsOICuwYiJS-1\&scaling=scale-down\&content-scaling=fixed\&starting-point-node-id=7%3A4709](https://www.figma.com/proto/HBZmaat1xvGIfdwLuLHdNA/PaperTrail?page-id=0%253A1&node-id=7-4709&p=f&viewport=175%252C177%252C0.03&t=lv1oGFsOICuwYiJS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=7%253A4709)
-
