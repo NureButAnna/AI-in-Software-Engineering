@@ -16,7 +16,7 @@
 | Що | Посилання |
 |---|---|
 | Макет і прототип Figma | https://www.figma.com/design/HBZmaat1xvGIfdwLuLHdNA/PaperTrail?node-id=0-1&t=rzR2Rw7jtymGxSwy-1 |
-| Відеозвіт для захисту |  |
+| Відеозвіт для захисту | https://youtu.be/aacaOCsww0Q |
 | Короткий звіт |  |
  
 **Інструменти:** ChatGPT, Gemini, Figma Starter (Figma Agent). Платні тарифи не використовувались.
