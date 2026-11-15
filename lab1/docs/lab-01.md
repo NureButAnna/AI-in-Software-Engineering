@@ -101,4 +101,4 @@
 | Матриця простежуваності              | [`traceability.csv`](traceability.csv)                                 |
 | Рев'ю і журнал змін                  | [`review_log.docx`](review_log.docx), [`change_log.md`](change_log.md) |
 | AI-журнал                            | [`ai-log.md`](ai-log.md)                                               |
-| Версія для здавання                  | тег `lab01-spec`, 1ee84276ed667f205cf0e89102068153b914c8ba             |
+| Версія для здавання                  | 1ee84276ed667f205cf0e89102068153b914c8ba             |
