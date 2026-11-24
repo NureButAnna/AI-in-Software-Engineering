@@ -72,6 +72,16 @@ def install_error_handlers(app: FastAPI) -> None:
         return _error_response(500, "INTERNAL_ERROR", "Внутрішня помилка сервера")
 
 
+def _body_doc(model):
+    """Схема тіла для Swagger: тіло приймається як dict (щоб помилки мали формат контракту), але документується моделлю."""
+    return {
+        "requestBody": {
+            "required": True,
+            "content": {"application/json": {"schema": model.model_json_schema()}},
+        }
+    }
+
+
 def get_db(request: Request):
     with request.app.state.session_factory() as db:
         yield db
@@ -91,7 +101,7 @@ def current_user(
     return user
 
 
-@router.post("/auth/register", status_code=201, response_model=schemas.UserResponse, tags=["auth"])
+@router.post("/auth/register", status_code=201, response_model=schemas.UserResponse, tags=["auth"], openapi_extra=_body_doc(schemas.RegisterRequest))
 def register(payload: dict[str, Any] = Body(...), db: Session = Depends(get_db)):
     data = schemas.validate(schemas.RegisterRequest, payload)
     user = services.register_user(db, data.email, data.password)
@@ -100,7 +110,7 @@ def register(payload: dict[str, Any] = Body(...), db: Session = Depends(get_db))
     )
 
 
-@router.post("/auth/login", response_model=schemas.TokenResponse, tags=["auth"])
+@router.post("/auth/login", response_model=schemas.TokenResponse, tags=["auth"], openapi_extra=_body_doc(schemas.LoginRequest))
 def login(
     request: Request, payload: dict[str, Any] = Body(...), db: Session = Depends(get_db)
 ):
@@ -110,7 +120,7 @@ def login(
     return schemas.TokenResponse(access_token=token)
 
 
-@router.post("/cases", status_code=201, response_model=schemas.CaseResponse, tags=["cases"])
+@router.post("/cases", status_code=201, response_model=schemas.CaseResponse, tags=["cases"], openapi_extra=_body_doc(schemas.CaseCreate))
 def create_case(
     payload: dict[str, Any] = Body(...),
     user: User = Depends(current_user),
@@ -143,7 +153,7 @@ def get_case(
     )
 
 
-@router.patch("/cases/{case_id}", response_model=schemas.CaseResponse, tags=["cases"])
+@router.patch("/cases/{case_id}", response_model=schemas.CaseResponse, tags=["cases"], openapi_extra=_body_doc(schemas.CasePatch))
 def patch_case(
     case_id: int = Path(gt=0),
     payload: dict[str, Any] = Body(...),
@@ -157,7 +167,7 @@ def patch_case(
     return schemas.CaseResponse.from_case(case)
 
 
-@router.patch("/cases/{case_id}/status", response_model=schemas.CaseResponse, tags=["cases"])
+@router.patch("/cases/{case_id}/status", response_model=schemas.CaseResponse, tags=["cases"], openapi_extra=_body_doc(schemas.StatusChange))
 def patch_case_status(
     case_id: int = Path(gt=0),
     payload: dict[str, Any] = Body(...),
