@@ -137,3 +137,30 @@ def get_case(
     return schemas.CaseDetailsResponse(
         **schemas.CaseResponse.from_case(case).model_dump(), **related
     )
+
+
+@router.patch("/cases/{case_id}", response_model=schemas.CaseResponse, tags=["cases"])
+def patch_case(
+    case_id: int = Path(gt=0),
+    payload: dict[str, Any] = Body(...),
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    # Порядок перевірок: токен → існування й власник → коректність даних → дозволеність статусом.
+    case = services.get_owned_case(db, user.id, case_id)
+    data = schemas.validate(schemas.CasePatch, payload)
+    case = services.update_case(db, case, data.model_dump(exclude_unset=True))
+    return schemas.CaseResponse.from_case(case)
+
+
+@router.patch("/cases/{case_id}/status", response_model=schemas.CaseResponse, tags=["cases"])
+def patch_case_status(
+    case_id: int = Path(gt=0),
+    payload: dict[str, Any] = Body(...),
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    case = services.get_owned_case(db, user.id, case_id)
+    data = schemas.validate(schemas.StatusChange, payload)
+    case = services.change_status(db, case, data.status)
+    return schemas.CaseResponse.from_case(case)

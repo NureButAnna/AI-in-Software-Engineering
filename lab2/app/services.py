@@ -7,8 +7,14 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from app import security
-from app.errors import DuplicateEmail, InvalidCredentials, NotFound
+from app.errors import (
+    DuplicateEmail,
+    InvalidCredentials,
+    InvalidStateTransition,
+    NotFound,
+)
 from app.models import (
+    TERMINAL_STATUSES,
     Case,
     CaseDocument,
     CaseInstitution,
@@ -108,3 +114,41 @@ def case_details(db: Session, case: Case) -> dict:
     ).all()
     institutions = sorted(institutions, key=lambda item: (uk_key(item.name), item.id))
     return {"tasks": tasks, "documents": documents, "institutions": institutions}
+
+
+# Матриця переходів (lab1/docs/requirements.md, розділ 2.2): поточний → дозволені наступні.
+ALLOWED_TRANSITIONS: dict[str, frozenset[str]] = {
+    "PREPARING": frozenset({"SUBMITTED", "CANCELLED"}),
+    "SUBMITTED": frozenset({"PREPARING", "IN_REVIEW", "CANCELLED"}),
+    "IN_REVIEW": frozenset({"APPROVED", "REJECTED", "CANCELLED"}),
+    "APPROVED": frozenset(),
+    "REJECTED": frozenset(),
+    "CANCELLED": frozenset(),
+}
+
+
+def update_case(db: Session, case: Case, changes: dict) -> Case:
+    """PATCH справи: усі передані поля вже перевірено схемою; запис — однією транзакцією."""
+    if case.status in TERMINAL_STATUSES:
+        # Заборонено навіть тоді, коли значення збігаються з поточними.
+        raise InvalidStateTransition()
+    changed = {key: value for key, value in changes.items() if getattr(case, key) != value}
+    if not changed:
+        return case  # updated_at не змінюється без фактичної зміни
+    for key, value in changed.items():
+        setattr(case, key, value)
+    case.updated_at = utcnow()
+    db.commit()
+    return case
+
+
+def change_status(db: Session, case: Case, new_status: str) -> Case:
+    """Окрема операція зміни статусу за матрицею; повторення поточного статусу — успіх без змін."""
+    if new_status == case.status:
+        return case
+    if new_status not in ALLOWED_TRANSITIONS[case.status]:
+        raise InvalidStateTransition(f"Перехід {case.status} → {new_status} заборонений")
+    case.status = new_status
+    case.updated_at = utcnow()
+    db.commit()
+    return case

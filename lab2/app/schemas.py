@@ -12,9 +12,12 @@ from pydantic import (
     BeforeValidator,
     ConfigDict,
     ValidationError,
+    field_validator,
+    model_validator,
 )
 
 from app.errors import ValidationFailed
+from app.models import CaseStatus
 
 _EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 _DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -180,3 +183,37 @@ class CaseDetailsResponse(CaseResponse):
     tasks: list[TaskItem]
     documents: list[DocumentItem]
     institutions: list[InstitutionItem]
+
+
+class CasePatch(_Strict):
+    """Часткове редагування: відсутнє поле — не змінювати, null лише для deadline."""
+
+    title: Title | None = None
+    deadline: Deadline = None
+
+    @field_validator("title", mode="before")
+    @classmethod
+    def _title_is_not_nullable(cls, value):
+        if value is None:
+            raise ValueError("Назва є обов'язковою і не може бути null")
+        return value
+
+    @model_validator(mode="after")
+    def _body_is_not_empty(self):
+        if not self.model_fields_set:
+            raise ValueError("Тіло запиту не може бути порожнім")
+        return self
+
+
+_STATUS_VALUES = [status.value for status in CaseStatus]
+
+
+class StatusChange(_Strict):
+    status: str
+
+    @field_validator("status")
+    @classmethod
+    def _known_status(cls, value: str) -> str:
+        if value not in _STATUS_VALUES:
+            raise ValueError("Невідомий статус; допустимі: " + ", ".join(_STATUS_VALUES))
+        return value
