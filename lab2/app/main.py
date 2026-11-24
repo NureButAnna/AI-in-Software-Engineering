@@ -10,6 +10,7 @@ from fastapi import FastAPI
 from sqlalchemy.orm import sessionmaker
 
 from app.database import create_db_engine, init_db, resolve_db_path
+from app.routes import install_error_handlers, router
 
 
 def create_app(db_path: str | Path | None = None, secret_key: str | None = None) -> FastAPI:
@@ -28,6 +29,9 @@ def create_app(db_path: str | Path | None = None, secret_key: str | None = None)
     app.state.secret_key = (
         secret_key or os.environ.get("PAPERTRAIL_SECRET_KEY") or secrets.token_hex(32)
     )
+
+    install_error_handlers(app)
+    app.include_router(router)
 
     @app.get("/health", tags=["technical"])
     def health() -> dict[str, str]:

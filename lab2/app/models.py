@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import enum
-from datetime import UTC, date, datetime
+from datetime import date, datetime, timezone
 
 from sqlalchemy import (
     Boolean,
@@ -36,7 +36,7 @@ TERMINAL_STATUSES = frozenset(
 
 def utcnow() -> datetime:
     """Поточний UTC без tzinfo: SQLite зберігає наївні значення, суфікс Z додає API."""
-    return datetime.now(UTC).replace(tzinfo=None)
+    return datetime.now(timezone.utc).replace(tzinfo=None)
 
 
 _STATUS_VALUES = ", ".join(f"'{s.value}'" for s in CaseStatus)
