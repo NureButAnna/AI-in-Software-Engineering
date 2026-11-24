@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
-from sqlalchemy import select
+from datetime import date, timedelta
+
+from sqlalchemy import delete, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
@@ -21,6 +23,7 @@ from app.models import (
     CaseStatus,
     Document,
     Institution,
+    Reminder,
     Task,
     User,
     utcnow,
@@ -152,3 +155,41 @@ def change_status(db: Session, case: Case, new_status: str) -> Case:
     case.updated_at = utcnow()
     db.commit()
     return case
+
+
+def delete_case(db: Session, case: Case) -> None:
+    """Видалення однією транзакцією (US-03, розділ 5.2): задачі й зв'язки зникають через ON DELETE
+    CASCADE, у нагадувань case_id стає NULL; документи, установи й нагадування лишаються."""
+    db.execute(delete(Case).where(Case.id == case.id))
+    db.commit()
+
+
+def _is_overdue(case: Case, today: date) -> bool:
+    return (
+        case.deadline is not None
+        and case.status not in TERMINAL_STATUSES
+        and case.deadline < today
+    )
+
+
+def _is_upcoming(case: Case, today: date) -> bool:
+    return (
+        case.deadline is not None
+        and case.status not in TERMINAL_STATUSES
+        and today <= case.deadline <= today + timedelta(days=14)
+    )
+
+
+def dashboard(db: Session, owner_id: int, today: date) -> dict:
+    """US-05, AC-10.3: лише читання; «сьогодні» передає клієнт."""
+    cases = list_cases(db, owner_id)
+    reminders = db.scalars(
+        select(Reminder)
+        .where(Reminder.owner_id == owner_id, Reminder.reminder_date <= today)
+        .order_by(Reminder.reminder_date, Reminder.id)
+    ).all()
+    return {
+        "overdue_cases": [c for c in cases if _is_overdue(c, today)],
+        "upcoming_cases": [c for c in cases if _is_upcoming(c, today)],
+        "due_reminders": list(reminders),
+    }

@@ -6,7 +6,7 @@ from typing import Any
 
 from fastapi import APIRouter, Body, Depends, FastAPI, Path, Request
 from fastapi.exceptions import RequestValidationError
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, Response
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
 from sqlalchemy.orm import Session
 from starlette.exceptions import HTTPException as StarletteHTTPException
@@ -164,3 +164,27 @@ def patch_case_status(
     data = schemas.validate(schemas.StatusChange, payload)
     case = services.change_status(db, case, data.status)
     return schemas.CaseResponse.from_case(case)
+
+
+@router.delete("/cases/{case_id}", status_code=204, response_class=Response, tags=["cases"])
+def delete_case(
+    case_id: int = Path(gt=0),
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    case = services.get_owned_case(db, user.id, case_id)
+    services.delete_case(db, case)
+    return Response(status_code=204)
+
+
+@router.get("/dashboard", response_model=schemas.DashboardResponse, tags=["dashboard"])
+def get_dashboard(
+    request: Request, user: User = Depends(current_user), db: Session = Depends(get_db)
+):
+    today = schemas.parse_today(request.query_params)
+    data = services.dashboard(db, user.id, today)
+    return schemas.DashboardResponse(
+        overdue_cases=[schemas.CaseResponse.from_case(c) for c in data["overdue_cases"]],
+        upcoming_cases=[schemas.CaseResponse.from_case(c) for c in data["upcoming_cases"]],
+        due_reminders=data["due_reminders"],
+    )

@@ -217,3 +217,40 @@ class StatusChange(_Strict):
         if value not in _STATUS_VALUES:
             raise ValueError("Невідомий статус; допустимі: " + ", ".join(_STATUS_VALUES))
         return value
+
+
+class ReminderItem(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    reminder_date: date
+    text: str
+    case_id: int | None
+
+
+class DashboardResponse(BaseModel):
+    overdue_cases: list[CaseResponse]
+    upcoming_cases: list[CaseResponse]
+    due_reminders: list[ReminderItem]
+
+
+def parse_today(query_params: Any, *, required: bool = True) -> date | None:
+    """Параметр today=YYYY-MM-DD; невідомі параметри запиту заборонені."""
+    details = [
+        {"field": name, "message": "Невідомий параметр запиту"}
+        for name in sorted({key for key, _ in query_params.multi_items()} - {"today"})
+    ]
+    values = query_params.getlist("today")
+    today = None
+    if len(values) > 1:
+        details.append({"field": "today", "message": "Параметр today задається один раз"})
+    elif values:
+        try:
+            today = parse_iso_date(values[0])
+        except ValueError as exc:
+            details.append({"field": "today", "message": str(exc)})
+    elif required:
+        details.append({"field": "today", "message": "Параметр today обов'язковий"})
+    if details:
+        raise ValidationFailed(details=details)
+    return today
