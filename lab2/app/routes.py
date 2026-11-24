@@ -122,8 +122,12 @@ def create_case(
 
 
 @router.get("/cases", response_model=list[schemas.CaseResponse], tags=["cases"])
-def list_cases(user: User = Depends(current_user), db: Session = Depends(get_db)):
-    return [schemas.CaseResponse.from_case(c) for c in services.list_cases(db, user.id)]
+def list_cases(
+    request: Request, user: User = Depends(current_user), db: Session = Depends(get_db)
+):
+    status, due, today = schemas.parse_cases_query(request.query_params)
+    cases = services.list_cases(db, user.id, status=status, due=due, today=today)
+    return [schemas.CaseResponse.from_case(c) for c in cases]
 
 
 @router.get("/cases/{case_id}", response_model=schemas.CaseDetailsResponse, tags=["cases"])

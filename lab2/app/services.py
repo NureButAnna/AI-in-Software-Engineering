@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from datetime import date, timedelta
+from datetime import date
 
 from sqlalchemy import delete, select
 from sqlalchemy.exc import IntegrityError
@@ -28,6 +28,7 @@ from app.models import (
     User,
     utcnow,
 )
+from app.predicates import matches_due, matches_status
 from app.sorting import case_sort_key, uk_key
 
 # Хеш для вирівнювання часу відповіді, коли email невідомий.
@@ -93,10 +94,23 @@ def get_owned_case(db: Session, owner_id: int, case_id: int) -> Case:
     return case
 
 
-def list_cases(db: Session, owner_id: int) -> list[Case]:
-    """Лише власні справи у визначеному порядку; порожній список — не помилка."""
+def list_cases(
+    db: Session,
+    owner_id: int,
+    status: str | None = None,
+    due: str | None = None,
+    today: date | None = None,
+) -> list[Case]:
+    """Лише власні справи у визначеному порядку; фільтри діють разом за AND.
+
+    Фільтрація відбувається в Python над прочитаними записами — для навчального обсягу даних
+    цього достатньо. Порожній результат — не помилка.
+    """
     cases = db.scalars(select(Case).where(Case.owner_id == owner_id)).all()
-    return sorted(cases, key=case_sort_key)
+    selected = [
+        case for case in cases if matches_status(case, status) and matches_due(case, due, today)
+    ]
+    return sorted(selected, key=case_sort_key)
 
 
 def case_details(db: Session, case: Case) -> dict:
@@ -164,22 +178,6 @@ def delete_case(db: Session, case: Case) -> None:
     db.commit()
 
 
-def _is_overdue(case: Case, today: date) -> bool:
-    return (
-        case.deadline is not None
-        and case.status not in TERMINAL_STATUSES
-        and case.deadline < today
-    )
-
-
-def _is_upcoming(case: Case, today: date) -> bool:
-    return (
-        case.deadline is not None
-        and case.status not in TERMINAL_STATUSES
-        and today <= case.deadline <= today + timedelta(days=14)
-    )
-
-
 def dashboard(db: Session, owner_id: int, today: date) -> dict:
     """US-05, AC-10.3: лише читання; «сьогодні» передає клієнт."""
     cases = list_cases(db, owner_id)
@@ -189,7 +187,7 @@ def dashboard(db: Session, owner_id: int, today: date) -> dict:
         .order_by(Reminder.reminder_date, Reminder.id)
     ).all()
     return {
-        "overdue_cases": [c for c in cases if _is_overdue(c, today)],
-        "upcoming_cases": [c for c in cases if _is_upcoming(c, today)],
+        "overdue_cases": [c for c in cases if matches_due(c, "overdue", today)],
+        "upcoming_cases": [c for c in cases if matches_due(c, "upcoming", today)],
         "due_reminders": list(reminders),
     }

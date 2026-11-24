@@ -254,3 +254,37 @@ def parse_today(query_params: Any, *, required: bool = True) -> date | None:
     if details:
         raise ValidationFailed(details=details)
     return today
+
+
+_DUE_VALUES = ("overdue", "upcoming")
+
+
+def parse_cases_query(query_params: Any) -> tuple[str | None, str | None, date | None]:
+    """GET /cases: status, due, today (усі необов'язкові); due потребує today; невідоме — 422."""
+    details = [
+        {"field": name, "message": "Невідомий параметр запиту"}
+        for name in sorted({key for key, _ in query_params.multi_items()} - {"status", "due", "today"})
+    ]
+    single: dict[str, str | None] = {}
+    for name in ("status", "due", "today"):
+        values = query_params.getlist(name)
+        if len(values) > 1:
+            details.append({"field": name, "message": "Параметр задається один раз"})
+        single[name] = values[0] if values else None
+
+    status, due = single["status"], single["due"]
+    if status is not None and status not in _STATUS_VALUES:
+        details.append({"field": "status", "message": "Невідомий статус; допустимі: " + ", ".join(_STATUS_VALUES)})
+    if due is not None and due not in _DUE_VALUES:
+        details.append({"field": "due", "message": "Допустимі значення: overdue, upcoming"})
+    today = None
+    if single["today"] is not None:
+        try:
+            today = parse_iso_date(single["today"])
+        except ValueError as exc:
+            details.append({"field": "today", "message": str(exc)})
+    elif due is not None:
+        details.append({"field": "today", "message": "Параметр today обов'язковий разом із due"})
+    if details:
+        raise ValidationFailed(details=details)
+    return status, due, today
