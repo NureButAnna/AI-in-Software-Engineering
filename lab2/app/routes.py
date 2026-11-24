@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from fastapi import APIRouter, Body, Depends, FastAPI, Request
+from fastapi import APIRouter, Body, Depends, FastAPI, Path, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from fastapi.security import HTTPAuthorizationCredentials, HTTPBearer
@@ -108,3 +108,32 @@ def login(
     user = services.authenticate(db, data.email, data.password)
     token = security.issue_token(user.id, request.app.state.secret_key)
     return schemas.TokenResponse(access_token=token)
+
+
+@router.post("/cases", status_code=201, response_model=schemas.CaseResponse, tags=["cases"])
+def create_case(
+    payload: dict[str, Any] = Body(...),
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    data = schemas.validate(schemas.CaseCreate, payload)
+    case = services.create_case(db, user.id, data.title, data.deadline)
+    return schemas.CaseResponse.from_case(case)
+
+
+@router.get("/cases", response_model=list[schemas.CaseResponse], tags=["cases"])
+def list_cases(user: User = Depends(current_user), db: Session = Depends(get_db)):
+    return [schemas.CaseResponse.from_case(c) for c in services.list_cases(db, user.id)]
+
+
+@router.get("/cases/{case_id}", response_model=schemas.CaseDetailsResponse, tags=["cases"])
+def get_case(
+    case_id: int = Path(gt=0),
+    user: User = Depends(current_user),
+    db: Session = Depends(get_db),
+):
+    case = services.get_owned_case(db, user.id, case_id)
+    related = services.case_details(db, case)
+    return schemas.CaseDetailsResponse(
+        **schemas.CaseResponse.from_case(case).model_dump(), **related
+    )

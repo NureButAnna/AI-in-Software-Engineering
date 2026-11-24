@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import pytest
 from fastapi.testclient import TestClient
+from sqlalchemy.orm import Session
 
 from app.main import create_app
 
@@ -28,3 +29,29 @@ def app(db_file):
 def client(app):
     with TestClient(app) as test_client:
         yield test_client
+
+
+@pytest.fixture
+def db(app):
+    """Пряма сесія до тестової бази: для підготовки даних, яких немає в API (ЛР1: лише 9 маршрутів)."""
+    with Session(app.state.engine) as session:
+        yield session
+
+
+@pytest.fixture
+def make_user(client):
+    """Реєструє користувача через API й повертає заголовки з токеном."""
+
+    def _make(email: str = "user@example.com", password: str = "examplePass8") -> dict:
+        client.post("/api/v1/auth/register", json={"email": email, "password": password})
+        token = client.post(
+            "/api/v1/auth/login", json={"email": email, "password": password}
+        ).json()["access_token"]
+        return {"Authorization": f"Bearer {token}"}
+
+    return _make
+
+
+@pytest.fixture
+def auth(make_user):
+    return make_user()

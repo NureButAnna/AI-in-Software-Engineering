@@ -9,6 +9,7 @@ from typing import Annotated, Any
 from pydantic import (
     AfterValidator,
     BaseModel,
+    BeforeValidator,
     ConfigDict,
     ValidationError,
 )
@@ -114,3 +115,68 @@ class UserResponse(BaseModel):
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"
+
+
+def _non_empty_trimmed(value: str) -> str:
+    value = value.strip()
+    if not value:
+        raise ValueError("Назва не може бути порожньою")
+    return value
+
+
+Title = Annotated[str, AfterValidator(_non_empty_trimmed)]
+Deadline = Annotated[date | None, BeforeValidator(parse_iso_date)]
+
+
+class CaseCreate(_Strict):
+    title: Title
+    deadline: Deadline = None
+
+
+class CaseResponse(BaseModel):
+    id: int
+    title: str
+    status: str
+    deadline: date | None
+    created_at: str
+    updated_at: str
+
+    @classmethod
+    def from_case(cls, case) -> CaseResponse:
+        return cls(
+            id=case.id,
+            title=case.title,
+            status=case.status,
+            deadline=case.deadline,
+            created_at=format_timestamp(case.created_at),
+            updated_at=format_timestamp(case.updated_at),
+        )
+
+
+class TaskItem(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    title: str
+    is_completed: bool
+
+
+class DocumentItem(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    title: str
+    received_date: date
+
+
+class InstitutionItem(BaseModel):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: int
+    name: str
+
+
+class CaseDetailsResponse(CaseResponse):
+    tasks: list[TaskItem]
+    documents: list[DocumentItem]
+    institutions: list[InstitutionItem]
