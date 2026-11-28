@@ -12,8 +12,8 @@ from types import SimpleNamespace
 
 import pytest
 
-from app.predicates import matches_due
 from experiment.status_manual import matches_status
+from app.predicates import matches_due
 
 TODAY = date(2026, 11, 9)
 STATUSES = ["PREPARING", "SUBMITTED", "IN_REVIEW", "APPROVED", "REJECTED", "CANCELLED"]

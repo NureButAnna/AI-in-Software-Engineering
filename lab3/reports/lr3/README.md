@@ -1,6 +1,6 @@
 # Артефакти експерименту ЛР3
 
-Підсумок: [`lab-03.md`](../../docs/lab-03.md); метадані прогонів: [`mutation-matrix.csv`](mutation-matrix.csv). Команди Python виконуються з `lab2/` у віртуальному середовищі з `requirements-lock.txt`. Git-команди нижче виконуються з кореня репозиторію.
+Підсумок: [`lab-03.md`](../../docs/lab-03.md); метадані прогонів: [`mutation-matrix.csv`](mutation-matrix.csv). Для перевірки поточної копії виконуйте команди Python з `lab3/` у віртуальному середовищі з `requirements-lock.txt`. Історичні коміти й патчі нижче відтворюють оригінальний експеримент у `lab2/` всередині окремих робочих копій. Git-команди виконуються з кореня відповідної копії.
 
 ## R0 й обидва набори
 
@@ -28,8 +28,8 @@ python -m bandit -r app -f json -o reports/lr3/bandit-r0.json
 
 ```sh
 # Підставте m1, m2 або m3 в окремій копії; шлях веде до фінального checkout.
-PYTHONPATH=. python /path/to/final-checkout/lab2/experiment/lr3_probe.py m1
+PYTHONPATH=. python /path/to/current-checkout/lab3/experiment/lr3_probe.py m1
 python -m pytest -q --tb=short -o enable_assertion_pass_hook=false
 ```
 
-Після T0 перенесіть T1 тим самим `git restore` і повторіть pytest. Для M1/M3 застосуйте відповідний патч виправлення, збережіть ті самі тести, повторіть контрольний запит, цільовий тест із матриці та двічі повний T1 (`python -m pytest -q`). У M3 і M3 fixed повторіть команду Bandit, змінивши ім’я файлу на `bandit-m3.json` і `bandit-m3-fixed.json` відповідно. Із фінальної інтеграційної версії запустіть `python -m pytest -q` і `python -m ruff check app tests --select E4,E7,E9,F,I`.
+Після T0 перенесіть T1 тим самим `git restore` і повторіть pytest. Для M1/M3 застосуйте відповідний патч виправлення, збережіть ті самі тести, повторіть контрольний запит, цільовий тест із матриці та двічі повний T1 (`python -m pytest -q`). У M3 і M3 fixed повторіть команду Bandit, змінивши ім’я файлу на `bandit-m3.json` і `bandit-m3-fixed.json` відповідно. Для поточної інтеграційної версії запустіть із `lab3/` `python -m pytest -q` і `python -m ruff check app tests --select E4,E7,E9,F,I`.
