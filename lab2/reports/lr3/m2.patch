@@ -1,0 +1,17 @@
+diff --git a/lab2/app/routes.py b/lab2/app/routes.py
+index 0d75cd0..65cd04b 100644
+--- a/lab2/app/routes.py
++++ b/lab2/app/routes.py
+@@ -165 +165,11 @@ def patch_case(
+-    data = schemas.validate(schemas.CasePatch, payload)
++    try:
++        data = schemas.validate(schemas.CasePatch, payload)
++    except ValidationFailed as error:
++        if (
++            set(payload) == {"title", "deadline"}
++            and [detail["field"] for detail in error.details] == ["deadline"]
++            and case.status not in services.TERMINAL_STATUSES
++        ):
++            title_only = schemas.validate(schemas.CasePatch, {"title": payload["title"]})
++            services.update_case(db, case, title_only.model_dump(exclude_unset=True))
++        raise

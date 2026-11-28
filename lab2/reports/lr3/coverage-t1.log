@@ -1,0 +1,2281 @@
+============================= test session starts ==============================
+platform linux -- Python 3.14.10, pytest-9.2.0, pluggy-1.7.0
+rootdir: /home/nero/Nure/term 7/AIiPE/AI-in-Software-Engineering/lab2
+configfile: pytest.ini
+testpaths: tests
+plugins: cov-7.1.0, anyio-4.16.0
+collected 470 items
+
+tests/test_auth.py ............................................          [  9%]
+tests/test_case_updates.py ............................................. [ 18%]
+...........................................                              [ 28%]
+tests/test_cases.py ..................................                   [ 35%]
+tests/test_delete_dashboard.py ...................................       [ 42%]
+tests/test_demo_flow.py .                                                [ 42%]
+tests/test_errors.py ..............                                      [ 45%]
+tests/test_filters.py .................................                  [ 52%]
+tests/test_lr3_ai.py ..                                                  [ 53%]
+tests/test_lr3_contract.py ......                                        [ 54%]
+tests/test_predicates.py ............................................... [ 64%]
+.........................................................                [ 76%]
+tests/test_predicates_manual.py ........................................ [ 85%]
+................................................................         [ 98%]
+tests/test_scaffold.py ...../usr/lib/python3.14/collections/__init__.py:455: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b09d50>
+  result = tuple_new(cls, iterable)
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+                                             [100%]
+
+=============================== warnings summary ===============================
+../../../../../../../tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/testclient.py:1
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+tests/test_auth.py::test_t01_register_does_not_log_user_in
+  <string>:8: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d74b15d0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t01_email_is_trimmed_and_lowercased
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d74e7a60>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6b87f10>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6c04d60>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6c07790>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b17b0>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62ecd60>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62eda80>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d613a980>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d619a110>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d620cd60>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6043880>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload11]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/starlette/requests.py:261: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d620fa60>
+    self._body = b"".join(chunks)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_register_invalid_input_is_422_and_creates_nothing[payload13]
+  /usr/lib/python3.14/contextlib.py:534: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c1c60>
+    def callback(self, callback, /, *args, **kwds):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t02_non_object_body_is_422[42]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2828: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d620c7c0>
+    @classmethod
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c3100>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6b87c40>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c0310>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60423e0>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c2110>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d619b880>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d613a020>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d613ae30>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6198f40>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b07c0>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload3]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2196: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b23e0>
+    self._wait_queue: OrderedDict[Any, asyncio.Event] = OrderedDict()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_auth.py::test_t04_login_invalid_input_is_422[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:419: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d74e7f10>
+    self._tasks: set[asyncio.Task] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ffd8a0>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d74e7790>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6c04e50>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6c07e20>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d61988b0>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6199d50>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d620fc40>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6075d50>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5e572e0>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ecd030>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_title_keeps_deadline
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:886: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5eec400>
+    def _spawn(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d74e4220>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d32200>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ffdc60>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ffed40>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d61984f0>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5e57880>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b3f10>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d61dcf40>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d89b70>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d619b1f0>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_invalid_patch_is_422_and_changes_nothing[payload4]
+  /usr/lib/python3.14/urllib/parse.py:784: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5c64040>
+    def parse_qsl(qs, keep_blank_values=False, strict_parsing=False,
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ffff10>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c0a90>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d613a890>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d620e020>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6c062f0>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5e575b0>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6042b60>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5eccc70>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5eeda80>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5c67880>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ecc6d0>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5cdef20>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ece2f0>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b36200>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5c67c40>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b855d0>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5c663e0>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t10_patch_unknown_or_foreign_case_is_404
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2739: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b87010>
+    workers = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b36890>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5c65e40>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5cdf970>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5eed4e0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ecf6a0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6c073d0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6076b60>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b2a70>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6077e20>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b872e0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d884f0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5bfa7a0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d8a5c0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6da80>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b86110>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6e020>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6d210>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t11_patch_in_terminal_status_is_409_even_without_real_change[payload2-CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2870: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b08310>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ab5990>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5bfbb50>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ab57b0>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5bf98a0>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d8ac50>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d8bb50>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b372e0>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5c65a80>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5cdcc70>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d333d0>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b0a2f0>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b37880>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b0a3e0>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b0a020>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d59e0a90>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b09a80>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[SUBMITTED-PREPARING]
+  /usr/lib/python3.14/weakref.py:335: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d59e3e20>
+    self.data[ref(key, self._remove)] = value
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5cdd6c0>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d8bc40>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5cdf790>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6102c50>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5cdd120>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5bfa4d0>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d620d8a0>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6d6c0>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b84310>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d59e0f40>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6fe20>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5899e40>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5bf9f30>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d58dd210>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d59e2980>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[IN_REVIEW-APPROVED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5bf8f40>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5899c60>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b3c40>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6fc40>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d8ae30>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5bf93f0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b08f40>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b854e0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d58dfe20>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d8b1f0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b34130>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5c66f20>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b0a90>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d58def20>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b3e20>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d58deb60>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b3790>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b24d0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[REJECTED-SUBMITTED]
+  <string>:0: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56765c0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5800130>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d58dfb50>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5800e50>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b085e0>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b0130>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b1b70>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d59916c0>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5899d50>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d574aa70>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5676980>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6ca90>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56ec5e0>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6db70>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56ee3e0>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56772e0>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5552e30>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5677c40>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t12_transition_matrix[CANCELLED-CANCELLED]
+  /usr/lib/python3.14/asyncio/base_events.py:818: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d559e2f0>
+    def call_soon(self, callback, *args, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5552200>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56773d0>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d55533d0>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56744f0>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ab7b50>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b1030>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b2a70>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6f010>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d574a020>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b0b790>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d559ff10>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5749f30>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d544b2e0>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5749a80>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload0]
+  /usr/lib/python3.14/threading.py:1309: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d544b790>
+    def _make_invoke_excepthook():
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6b84400>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6042980>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d61017b0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d32c50>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b18a0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d613aa70>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b358a0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6f5b0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6c9a0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d59917b0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b0a890>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5899990>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d59e3b50>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b0d60>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b07c0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56efc40>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56ec400>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5449990>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_invalid_status_body_is_422_and_changes_nothing[payload1]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d559c6d0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d559dd50>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5993d30>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5449030>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ab4d60>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d59936a0>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d323e0>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d544a4d0>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c1d50>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d58034c0>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6b85120>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d32a70>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5c65300>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6b87790>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_case_updates.py::test_t13_patch_routes_require_token[method_path0]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/lowlevel.py:28: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6b87a60>
+    async def checkpoint() -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d62b26b0>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c2980>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5ab6f20>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b36020>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d74e49a0>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b35f30>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c27a0>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5a6e6b0>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5551c60>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t07_create_invalid_is_422_and_creates_nothing[payload5]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/routing.py:2908: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d8a4d0>
+    async def app(self, scope: Scope, receive: Receive, send: Send) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5cdff10>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d54aef20>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d54afd30>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d60c24d0>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d58025c0>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5448400>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d559d300>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5992980>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52504f0>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t08_list_empty_is_200_empty_array
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:1115: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5253100>
+    def _get_args_resolving_forward_refs(self, obj: Any, required: bool = False) -> tuple[Any, ...] | None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t09_deadline_ascending_and_no_deadline_last
+  /usr/lib/python3.14/typing.py:2308: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52c22f0>
+    def cast(typ, val):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t09_deadline_ascending_and_no_deadline_last
+  /usr/lib/python3.14/typing.py:2308: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52c3880>
+    def cast(typ, val):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t09_deadline_ascending_and_no_deadline_last
+  /usr/lib/python3.14/typing.py:2308: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d528b970>
+    def cast(typ, val):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t09_deadline_ascending_and_no_deadline_last
+  /usr/lib/python3.14/typing.py:2308: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d74e4b80>
+    def cast(typ, val):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t09_deadline_ascending_and_no_deadline_last
+  /usr/lib/python3.14/typing.py:2308: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5991d50>
+    def cast(typ, val):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t09_deadline_ascending_and_no_deadline_last
+  /usr/lib/python3.14/typing.py:2308: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d57b0400>
+    def cast(typ, val):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t09_deadline_ascending_and_no_deadline_last
+  /usr/lib/python3.14/typing.py:2308: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b866b0>
+    def cast(typ, val):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_cases.py::test_t09_deadline_ascending_and_no_deadline_last
+  /usr/lib/python3.14/typing.py:2308: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d54493f0>
+    def cast(typ, val):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5173790>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5170400>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d56eda80>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5302890>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5801030>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d31e40>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5251c60>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5171030>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52197b0>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52524d0>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d50fa890>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5251f30>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t14_foreign_or_missing_case_is_404_and_nothing_is_deleted
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/from_thread.py:96: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f593f0>
+    def run_sync(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6b845e0>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d30f40>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5171300>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52525c0>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5301300>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f5ab60>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5288f40>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4fedf30>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f58d60>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d500d210>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f5b010>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_terminal_cases_never_appear[CANCELLED]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:2191: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e7c6d0>
+    return object.__new__(cls)
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4fef970>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d50fb6a0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52c2110>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5303970>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4fef790>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d32110>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d50f93f0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d500f4c0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d51736a0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e7da80>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d53017b0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4ef4d60>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5303d30>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4d48220>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t15_dashboard_depends_on_today_parameter
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:3017: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d500d7b0>
+    def __init__(self) -> None:
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4ef5d50>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d500f010>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4d4b790>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4d4ba60>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data/tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:29: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4b2d7b0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:29: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d58dce50>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:29: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4ef7880>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:29: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d559c040>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+/tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/_pytest/unraisableexception.py:29: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c417b0>
+  gc.collect()
+ResourceWarning: Enable tracemalloc to get the object allocation traceback
+
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d500ed40>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5550b80>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5550d60>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4fefa60>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f59030>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4dcb100>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_delete_dashboard.py::test_t16_dashboard_shows_only_own_data
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_config.py:238: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e196c0>
+    def __init__(self, config_wrapper: ConfigWrapper):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[get-/api/v1/cases]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e1bf10>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[get-/api/v1/cases]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4fee7a0>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[get-/api/v1/cases]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e1bd30>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[get-/api/v1/cases]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4ef5f30>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[get-/api/v1/cases]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f59990>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[get-/api/v1/cases]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5302e30>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[get-/api/v1/cases]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e7f010>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[get-/api/v1/cases]
+  /usr/lib/python3.14/asyncio/events.py:41: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c85030>
+    def __init__(self, callback, args, loop, context=None):
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_errors.py::test_t05_every_protected_route_requires_token[patch-/api/v1/cases/1]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/anyio/_backends/_asyncio.py:412: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4b2d4e0>
+    self._child_scopes: set[CancelScope] = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t17_status_filter_alone
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/compiler.py:7738: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f5a110>
+    ", ".join(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4b2ff10>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c416c0>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4b2d030>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d500e020>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4bc2020>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f5a2f0>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4280f40>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4f587c0>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d42a85e0>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4bc07c0>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d42ab6a0>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d42805e0>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t18_due_boundaries[2026-11-08-overdue-True]
+  /usr/lib/python3.14/threading.py:362: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4302a70>
+    waiter = _allocate_lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c41210>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d43018a0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d42a9a80>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4281f30>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4bc08b0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d500fe20>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4dca6b0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d41e58a0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c85d50>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4034d60>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d41e64d0>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_two_filters_return_intersection_not_union
+  <string>:6: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4094040>
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d544b1f0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5449a80>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b86890>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5d8b790>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52c13f0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5302c50>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5288220>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52898a0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4fed300>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4feca90>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e7db70>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4ef71f0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c40a90>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e1b5b0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4b2c8b0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d42ab1f0>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d41e4b80>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_combination_without_matches_is_200_and_empty
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/sql/elements.py:2061: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d41e7010>
+    def __init__(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d41e62f0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d40344f0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d40374c0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4d486d0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6c07880>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d51706d0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6138b80>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5219030>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4b2f2e0>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d54ac040>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5218040>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6042d40>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5170310>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d416b100>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6042890>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_filters.py::test_t19_invalid_query_is_422_not_empty_list[due=overdue&today=09.11.2026]
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2522: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e7f100>
+    def _get_wrapped_inner_schema(
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d6c06e30>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52c1e40>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e7f880>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d52187c0>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5803880>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4fedb70>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4169030>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d41e45e0>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4d4aa70>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c85c60>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5218f40>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4bc0040>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4b2dc60>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c86200>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/pydantic/_internal/_generate_schema.py:2871: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d41e54e0>
+    self._recursively_seen = set()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4bc34c0>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4c424d0>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4bc3880>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d40362f0>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4036a70>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d5b093f0>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4e7f5b0>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4ef7b50>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+tests/test_scaffold.py::test_t20_data_survives_restart_and_init_is_idempotent
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/sqlalchemy/pool/impl.py:139: ResourceWarning: unclosed database in <sqlite3.Connection object at 0x7f66d4fedc60>
+    self._overflow_lock = threading.Lock()
+  Enable tracemalloc to get traceback where the object was allocated.
+  See https://docs.pytest.org/en/stable/how-to/capture-warnings.html#resource-warnings for more info.
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.14.10-final-0 _______________
+
+Name                Stmts   Miss Branch BrPart  Cover   Missing
+---------------------------------------------------------------
+app/__init__.py         0      0      0      0   100%
+app/database.py        26      0      2      0   100%
+app/errors.py          27      0      0      0   100%
+app/main.py            21      0      0      0   100%
+app/models.py          83      0      0      0   100%
+app/predicates.py      19      0     10      0   100%
+app/routes.py          95      0      6      0   100%
+app/schemas.py        180      0     48      1    99%   252->254
+app/security.py        40      1      6      1    96%   41
+app/services.py        82      3     18      0    97%   52-54
+app/sorting.py         16      0      6      0   100%
+---------------------------------------------------------------
+TOTAL                 589      4     96      2    99%
+Coverage JSON written to file reports/lr3/coverage-t1.json
+====================== 470 passed, 375 warnings in 47.64s ======================

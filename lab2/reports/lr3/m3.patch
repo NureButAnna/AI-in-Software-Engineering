@@ -1,0 +1,7 @@
+diff --git a/lab2/app/services.py b/lab2/app/services.py
+index cdbabc0..f9e00b4 100644
+--- a/lab2/app/services.py
++++ b/lab2/app/services.py
+@@ -78 +78 @@ def create_case(db: Session, owner_id: int, title: str, deadline) -> Case:
+-        title=title,
++        title=title.replace("'", "''"),

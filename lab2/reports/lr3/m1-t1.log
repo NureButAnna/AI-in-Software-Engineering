@@ -1,0 +1,39 @@
+........................................................................ [ 15%]
+.......F................................................................ [ 30%]
+.........................................................F.............. [ 45%]
+...................................F.................................... [ 61%]
+........................................................................ [ 76%]
+........................................................................ [ 91%]
+......................................                                   [100%]
+=================================== FAILURES ===================================
+________________ test_t12_transition_matrix[PREPARING-APPROVED] ________________
+tests/test_case_updates.py:195: in test_t12_transition_matrix
+    error = assert_error(response, 409, "INVALID_STATE_TRANSITION")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+tests/test_case_updates.py:26: in assert_error
+    assert response.status_code == status
+E   assert 200 == 409
+E    +  where 200 = <Response [200 OK]>.status_code
+_____________ test_demo_register_create_edit_close_filter_restart ______________
+tests/test_demo_flow.py:28: in test_demo_register_create_edit_close_filter_restart
+    assert reopen.status_code == 409
+E   assert 200 == 409
+E    +  where 200 = <Response [200 OK]>.status_code
+___________ test_t23_approved_case_stays_closed_after_reopen_attempt ___________
+tests/test_lr3_contract.py:32: in test_t23_approved_case_stays_closed_after_reopen_attempt
+    assert (response.status_code, after["status"], after["updated_at"]) == (
+E   AssertionError: assert (200, 'PREPAR...28T07:50:42Z') == (409, 'APPROV...28T07:50:42Z')
+E     
+E     At index 0 diff: 200 != 409
+E     Use -v to get more diff
+=============================== warnings summary ===============================
+../../papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/testclient.py:1
+  /tmp/opencode/papertrail-lr3-venv/lib/python3.14/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_case_updates.py::test_t12_transition_matrix[PREPARING-APPROVED]
+FAILED tests/test_demo_flow.py::test_demo_register_create_edit_close_filter_restart
+FAILED tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt
+3 failed, 467 passed, 1 warning in 52.58s

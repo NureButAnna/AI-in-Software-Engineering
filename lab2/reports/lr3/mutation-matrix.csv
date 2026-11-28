@@ -1,0 +1,7 @@
+mutation,code_commit,suite,suite_commit,detected,passed,failed,evidence_nodeid,log,probe,expected,actual
+M1,38cbaa27e72c41d6823e00982326a48ea319d08f,T0,cbf5087c011f11dca79f7566ba31808bf187b22c,yes,460,2,tests/test_case_updates.py::test_t12_transition_matrix[PREPARING-APPROVED],m1-t0.log,m1-probe.log,PATCH 409; GET APPROVED,PATCH 200; GET PREPARING
+M1,38cbaa27e72c41d6823e00982326a48ea319d08f,T1,02d51980c778a276174cb75d11885b3f165fe6c5,yes,467,3,tests/test_lr3_contract.py::test_t23_approved_case_stays_closed_after_reopen_attempt,m1-t1.log,m1-probe.log,PATCH 409; GET APPROVED,PATCH 200; GET PREPARING
+M2,0422a09ac2df18f3be92f5115d8b6dccd716564d,T0,cbf5087c011f11dca79f7566ba31808bf187b22c,yes,461,1,tests/test_case_updates.py::test_t11_valid_title_with_invalid_deadline_changes_nothing,m2-t0.log,m2-probe.log,422; Стара / 2026-11-30,422; Нова / 2026-11-30
+M2,0422a09ac2df18f3be92f5115d8b6dccd716564d,T1,02d51980c778a276174cb75d11885b3f165fe6c5,yes,468,2,tests/test_lr3_contract.py::test_t24_rejected_patch_preserves_both_fields_in_get,m2-t1.log,m2-probe.log,422; Стара / 2026-11-30,422; Нова / 2026-11-30
+M3,942b1430c8d0a6833ffaeb711ac8681e1bca6684,T0,cbf5087c011f11dca79f7566ba31808bf187b22c,no,462,0,,m3-t0.log,m3-probe.log,201; GET O'Brien,201; GET O''Brien (лише контрольний запит)
+M3,942b1430c8d0a6833ffaeb711ac8681e1bca6684,T1,02d51980c778a276174cb75d11885b3f165fe6c5,yes,469,1,tests/test_lr3_contract.py::test_t26_created_title_round_trips_exactly[apostrophe],m3-t1.log,m3-probe.log,201; GET O'Brien,201; GET O''Brien

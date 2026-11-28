@@ -1,0 +1,7 @@
+diff --git a/lab2/app/services.py b/lab2/app/services.py
+index cdbabc0..25aaf2b 100644
+--- a/lab2/app/services.py
++++ b/lab2/app/services.py
+@@ -141 +141 @@ ALLOWED_TRANSITIONS: dict[str, frozenset[str]] = {
+-    "APPROVED": frozenset(),
++    "APPROVED": frozenset({"PREPARING"}),
