@@ -1,0 +1,32 @@
+Пропоную додати окремий `tests/test_lr3_ai.py`. Обидва тести використовують `client` і `auth` із `conftest.py` та не потребують змін у застосунку.
+
+```python
+CASES = "/api/v1/cases"
+
+
+def test_t28_patch_both_fields_persists(client, auth):
+    """AC-03.8: обидві зміни доступні після повторного читання."""
+    created = client.post(CASES, headers=auth, json={"title": "Початкова"})
+    assert created.status_code == 201
+    url = f"{CASES}/{created.json()['id']}"
+    changes = {"title": "Оновлена", "deadline": "2026-12-12"}
+    changed = client.patch(url, headers=auth, json=changes)
+    assert changed.status_code == 200
+    loaded = client.get(url, headers=auth)
+    assert loaded.status_code == 200
+    assert all(loaded.json()[key] == value for key, value in changes.items())
+
+
+def test_repeat_status_keeps_updated_at(client, auth):
+    """AC-06.4: повтор поточного статусу не змінює дату оновлення."""
+    created = client.post(CASES, headers=auth, json={"title": "Повтор"})
+    assert created.status_code == 201
+    before = created.json()
+    changed = client.patch(
+        f"{CASES}/{before['id']}/status", headers=auth, json={"status": "PREPARING"}
+    )
+    assert changed.status_code == 200
+    assert changed.json()["updated_at"] == before["updated_at"]
+```
+
+Перший випадок перевіряє збережені `title` і `deadline`; другий — що повтор статусу не оновлює час у відповіді.
